@@ -13,8 +13,20 @@ Assuma que a e b tem tamanho 2 ou maior.
 """
 
 def mix_up(a, b):
-    # +++ SUA SOLUÇÃO +++
-    return
+    names_list = []
+    first_letter_a = a[0]
+    second_letter_a = a[1]
+    first_letter_b = b[0]
+    second_letter_b = b[1]
+    a = a.replace(a[0], first_letter_b,1)
+    a = a.replace(a[1], second_letter_b,1)
+    b = b.replace(b[0], first_letter_a,1)
+    b = b.replace(b[1], second_letter_a,1)
+    names_list.append(a)
+    names_list.append(b)
+    s = " "
+    s = s.join(names_list)
+    return s
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
