@@ -14,8 +14,11 @@ onde todas as instancias de stra foram substituidas por strb.
 """
 
 def fix_start(s):
-    # +++ SUA SOLUÇÃO +++
-    return
+    primeira_letra = s[0]
+    s = s.replace(s[0],'*')
+    s = s.replace(s[0],primeira_letra,1)
+
+    return s
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
